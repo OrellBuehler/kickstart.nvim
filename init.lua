@@ -690,7 +690,7 @@ require('lazy').setup({
         --
         tailwindcss = {},
         csharp_ls = {},
-        eslint = {},
+        biome = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
