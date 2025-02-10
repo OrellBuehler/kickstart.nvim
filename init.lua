@@ -93,9 +93,6 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
-vim.g.markdown_fenced_languages = {
-  'ts=typescript',
-}
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
@@ -316,6 +313,12 @@ require('lazy').setup({
         desc = 'Quickfix List (Trouble)',
       },
     },
+  },
+
+  {
+    'pmizio/typescript-tools.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+    opts = {},
   },
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
@@ -693,7 +696,6 @@ require('lazy').setup({
         --
         tailwindcss = {},
         csharp_ls = {},
-        denols = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
